@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(22, 21, 21);
+}
+button {
+  cursor: pointer;
+}
+.app {
+  width: 400px;
+  margin: 32px auto;
+  border: 1px solid rgba(102, 235, 169, 0.871);
+  min-height: 370px;
+
+  display: grid;
+}
+.btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 32px;
+  /* height: 50px; */
+  align-self: end;
+}
+.app-btn {
+  background-color: rgba(102, 235, 169, 0.871);
+  color: rgb(22, 21, 21);
+  padding: 12px;
+  border: 1px solid rgb(22, 21, 21);
+}
+.app-btn:hover {
+  transform: translateY(-2px);
+}
+.btn .active-app {
+  transform: translateY(-2px);
+}
+.clock {
+  color: rgba(102, 235, 169, 0.871);
+  display: grid;
+  justify-content: center;
+}
+.head {
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  padding: 16px;
+}
+.content {
+  box-shadow: rgba(102, 235, 169, 0.871) 0px 5px 15px;
+  padding: 16px;
+  margin: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.stop-watch--btn {
+  margin: 32px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.stop-watch--btn button {
+  padding: 8px;
+  color: rgba(22, 21, 21, 0.718);
+  box-shadow: rgba(102, 235, 169, 0.871) 0px 30px 60px -12px inset,
+    rgba(102, 235, 169, 0.93) 0px 18px 36px -18px inset;
+  border: 1px solid rgb(22, 21, 21);
+  border-radius: 4px;
+}
+.stop-watch--btn button:hover {
+  background-color: rgba(102, 235, 169, 0.871);
+  color: rgb(6, 6, 6);
+}
+
+.stop-watch--btn .active-stop {
+  background-color: rgba(102, 235, 169, 0.871);
+  color: rgb(6, 6, 6);
+}
+ul {
+  justify-self: center;
+}
